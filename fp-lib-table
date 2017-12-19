@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name ArduProMiniTKB)(type Legacy)(uri "$(KIPRJMOD)/libs/ArduProMini/ArduProMiniTKB.mod")(options "")(descr ""))
+  (lib (name cherry)(type Legacy)(uri "$(KIPRJMOD)/libs/cherry/cherry.mod")(options "")(descr ""))
+  (lib (name keebs)(type KiCad)(uri "$(KIPRJMOD)/libs/keebs.pretty")(options "")(descr ""))
+  (lib (name keyboard_parts)(type KiCad)(uri "$(KIPRJMOD)/libs/keyboard_parts.pretty")(options "")(descr ""))
+  (lib (name ws2812)(type KiCad)(uri "$(KIPRJMOD)/libs/ws2812")(options "")(descr ""))
+)

@@ -1,0 +1,527 @@
+EESchema Schematic File Version 2
+LIBS:ws2812b
+LIBS:ArduProMiniTKB
+LIBS:cherry
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mechanical_keyboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328P-A IC1
+U 1 1 5A3DC57E
+P 2950 2600
+F 0 "IC1" H 2200 3850 50  0000 L BNN
+F 1 "ATMEGA328P-A" H 3350 1200 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 2950 2600 50  0000 C CIN
+F 3 "" H 2950 2600 50  0000 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5A3DC585
+P 1400 1100
+F 0 "#PWR02" H 1400 950 50  0001 C CNN
+F 1 "VCC" H 1400 1250 50  0000 C CNN
+F 2 "" H 1400 1100 50  0000 C CNN
+F 3 "" H 1400 1100 50  0000 C CNN
+	1    1400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A3DC58B
+P 1400 4050
+F 0 "#PWR03" H 1400 3800 50  0001 C CNN
+F 1 "GND" H 1400 3900 50  0000 C CNN
+F 2 "" H 1400 4050 50  0000 C CNN
+F 3 "" H 1400 4050 50  0000 C CNN
+	1    1400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1500 2050 1500
+Wire Wire Line
+	1400 1600 2050 1600
+Connection ~ 1400 1500
+Connection ~ 1400 1600
+Wire Wire Line
+	1400 3600 1400 4050
+Wire Wire Line
+	1400 3600 2050 3600
+Wire Wire Line
+	1400 3700 2050 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	2050 3800 1400 3800
+Connection ~ 1400 3800
+Text HLabel 4650 3100 2    60   Input ~ 0
+LED_RX
+Text HLabel 4650 3200 2    60   Input ~ 0
+LED_TX
+Wire Wire Line
+	4650 3200 3950 3200
+Wire Wire Line
+	3950 3100 4650 3100
+$Comp
+L WS2812B LED1
+U 1 1 5A3E06AC
+P 6650 1600
+F 0 "LED1" H 6650 1200 60  0000 C CNN
+F 1 "WS2812B" H 6650 2000 60  0000 C CNN
+F 2 "ws2812:WS2812B" V 6600 1600 60  0001 C CNN
+F 3 "" V 6600 1600 60  0000 C CNN
+	1    6650 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1400 5750 1400
+Text Label 5750 1400 0    60   ~ 0
+Din
+$Comp
+L VCC #PWR04
+U 1 1 5A3E083E
+P 7450 950
+F 0 "#PWR04" H 7450 800 50  0001 C CNN
+F 1 "VCC" H 7450 1100 50  0000 C CNN
+F 2 "" H 7450 950 50  0000 C CNN
+F 3 "" H 7450 950 50  0000 C CNN
+	1    7450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 950  7450 1400
+Wire Wire Line
+	7450 1400 7150 1400
+Wire Wire Line
+	6150 1800 5750 1800
+Wire Wire Line
+	5750 1800 5750 2100
+$Comp
+L GND #PWR05
+U 1 1 5A3E087F
+P 5750 2100
+F 0 "#PWR05" H 5750 1850 50  0001 C CNN
+F 1 "GND" H 5750 1950 50  0000 C CNN
+F 2 "" H 5750 2100 50  0000 C CNN
+F 3 "" H 5750 2100 50  0000 C CNN
+	1    5750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812B LED2
+U 1 1 5A3E093A
+P 8600 1600
+F 0 "LED2" H 8600 1200 60  0000 C CNN
+F 1 "WS2812B" H 8600 2000 60  0000 C CNN
+F 2 "ws2812:WS2812B" V 8550 1600 60  0001 C CNN
+F 3 "" V 8550 1600 60  0000 C CNN
+	1    8600 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5A3E0992
+P 9300 1000
+F 0 "#PWR06" H 9300 850 50  0001 C CNN
+F 1 "VCC" H 9300 1150 50  0000 C CNN
+F 2 "" H 9300 1000 50  0000 C CNN
+F 3 "" H 9300 1000 50  0000 C CNN
+	1    9300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1000 9300 1400
+Wire Wire Line
+	9300 1400 9100 1400
+Wire Wire Line
+	8100 1400 7600 1400
+Wire Wire Line
+	7600 1400 7600 1800
+Wire Wire Line
+	7600 1800 7150 1800
+Wire Wire Line
+	8100 1800 7850 1800
+Wire Wire Line
+	7850 1800 7850 2150
+$Comp
+L GND #PWR07
+U 1 1 5A3E09FE
+P 7850 2150
+F 0 "#PWR07" H 7850 1900 50  0001 C CNN
+F 1 "GND" H 7850 2000 50  0000 C CNN
+F 2 "" H 7850 2150 50  0000 C CNN
+F 3 "" H 7850 2150 50  0000 C CNN
+	1    7850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3300 4650 3300
+Text Label 4650 3300 2    60   ~ 0
+Din
+Wire Wire Line
+	1400 1800 2050 1800
+Wire Wire Line
+	1400 1100 1400 1800
+$Comp
+L C C1
+U 1 1 5A3FCA1F
+P 1400 2350
+F 0 "C1" H 1425 2450 50  0000 L CNN
+F 1 "0.1uF" H 1425 2250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1438 2200 50  0001 C CNN
+F 3 "" H 1400 2350 50  0000 C CNN
+	1    1400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2200 1400 2100
+Wire Wire Line
+	1400 2100 2050 2100
+Wire Wire Line
+	1400 2500 1400 2600
+$Comp
+L GND #PWR08
+U 1 1 5A3FCA9A
+P 1400 2600
+F 0 "#PWR08" H 1400 2350 50  0001 C CNN
+F 1 "GND" H 1400 2450 50  0000 C CNN
+F 2 "" H 1400 2600 50  0000 C CNN
+F 3 "" H 1400 2600 50  0000 C CNN
+	1    1400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5A3FCBA6
+P 2200 5200
+F 0 "Y1" H 2200 5350 50  0000 C CNN
+F 1 "Crystal" H 2200 5050 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 2200 5200 50  0001 C CNN
+F 3 "" H 2200 5200 50  0000 C CNN
+	1    2200 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A3FCC4D
+P 1600 4950
+F 0 "C2" H 1625 5050 50  0000 L CNN
+F 1 "22pF" H 1625 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1638 4800 50  0001 C CNN
+F 3 "" H 1600 4950 50  0000 C CNN
+	1    1600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5A3FCCB7
+P 1600 5450
+F 0 "C3" H 1625 5550 50  0000 L CNN
+F 1 "22pF" H 1625 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1638 5300 50  0001 C CNN
+F 3 "" H 1600 5450 50  0000 C CNN
+	1    1600 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 4950 2200 4950
+Wire Wire Line
+	2200 4950 2200 5050
+Wire Wire Line
+	2200 5350 2200 5450
+Wire Wire Line
+	2200 5450 1750 5450
+Wire Wire Line
+	1450 4950 1150 4950
+Wire Wire Line
+	1150 4950 1150 5800
+Wire Wire Line
+	1450 5450 1150 5450
+Connection ~ 1150 5450
+$Comp
+L GND #PWR09
+U 1 1 5A3FCE4C
+P 1150 5800
+F 0 "#PWR09" H 1150 5550 50  0001 C CNN
+F 1 "GND" H 1150 5650 50  0000 C CNN
+F 2 "" H 1150 5800 50  0000 C CNN
+F 3 "" H 1150 5800 50  0000 C CNN
+	1    1150 5800
+	1    0    0    -1  
+$EndComp
+Text Label 1950 4950 0    60   ~ 0
+xtal1
+Text Label 1950 5450 0    60   ~ 0
+xtal2
+Wire Wire Line
+	3950 2100 4400 2100
+Wire Wire Line
+	4400 2200 3950 2200
+Text Label 4400 2100 2    60   ~ 0
+xtal1
+Text Label 4400 2200 2    60   ~ 0
+xtal2
+$Comp
+L R R3
+U 1 1 5A3FD302
+P 4950 5000
+F 0 "R3" H 4950 4950 50  0000 C CNN
+F 1 "330" H 4950 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4950 5000 60  0001 C CNN
+F 3 "" H 4950 5000 60  0000 C CNN
+	1    4950 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 5000 4300 5000
+$Comp
+L GND #PWR010
+U 1 1 5A3FD604
+P 5350 5600
+F 0 "#PWR010" H 5350 5350 50  0001 C CNN
+F 1 "GND" H 5350 5450 50  0000 C CNN
+F 2 "" H 5350 5600 50  0000 C CNN
+F 3 "" H 5350 5600 50  0000 C CNN
+	1    5350 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2950 5400 2950
+$Comp
+L C C4
+U 1 1 5A3FDB6F
+P 5550 2950
+F 0 "C4" H 5575 3050 50  0000 L CNN
+F 1 "100nF" H 5575 2850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5588 2800 50  0001 C CNN
+F 3 "" H 5550 2950 50  0000 C CNN
+	1    5550 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 2950 6150 2950
+$Comp
+L CONN_01X05 P1
+U 1 1 5A3FDE24
+P 9700 3150
+F 0 "P1" H 9700 3450 50  0000 C CNN
+F 1 "CONN_01X05" V 9800 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 9700 3150 50  0001 C CNN
+F 3 "" H 9700 3150 50  0000 C CNN
+	1    9700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2950 9500 2950
+Wire Wire Line
+	9150 3050 9500 3050
+Wire Wire Line
+	9150 3150 9500 3150
+Wire Wire Line
+	8700 3250 9500 3250
+Wire Wire Line
+	9050 3350 9500 3350
+Text Label 9150 2950 0    60   ~ 0
+DTR
+Text Label 9150 3050 0    60   ~ 0
+RX
+Text Label 9150 3150 0    60   ~ 0
+TX
+Text Label 9150 3250 0    60   ~ 0
+5V
+Text Label 9150 3350 0    60   ~ 0
+GND
+Wire Wire Line
+	9050 3350 9050 3550
+$Comp
+L GND #PWR011
+U 1 1 5A3FE4A7
+P 9050 3550
+F 0 "#PWR011" H 9050 3300 50  0001 C CNN
+F 1 "GND" H 9050 3400 50  0000 C CNN
+F 2 "" H 9050 3550 50  0000 C CNN
+F 3 "" H 9050 3550 50  0000 C CNN
+	1    9050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR012
+U 1 1 5A3FE4DC
+P 8700 2850
+F 0 "#PWR012" H 8700 2700 50  0001 C CNN
+F 1 "VCC" H 8700 3000 50  0000 C CNN
+F 2 "" H 8700 2850 50  0000 C CNN
+F 3 "" H 8700 2850 50  0000 C CNN
+	1    8700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2850 8700 3250
+Text Label 6150 2950 0    60   ~ 0
+DTR
+$Comp
+L R R4
+U 1 1 5A3FE926
+P 5350 2700
+F 0 "R4" H 5350 2650 50  0000 C CNN
+F 1 "10k" H 5350 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 5350 2700 60  0001 C CNN
+F 3 "" H 5350 2700 60  0000 C CNN
+	1    5350 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2800 5350 2950
+Connection ~ 5350 2950
+Wire Wire Line
+	5350 2600 5350 2400
+$Comp
+L VCC #PWR013
+U 1 1 5A3FEA2F
+P 5350 2400
+F 0 "#PWR013" H 5350 2250 50  0001 C CNN
+F 1 "VCC" H 5350 2550 50  0000 C CNN
+F 2 "" H 5350 2400 50  0000 C CNN
+F 3 "" H 5350 2400 50  0000 C CNN
+	1    5350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED L3
+U 1 1 5A3FD349
+P 5250 5000
+F 0 "L3" H 5250 4900 50  0000 C CNN
+F 1 "LED" H 5250 5100 50  0000 C CNN
+F 2 "keyboard_parts:LED_0805" H 5250 5000 60  0001 C CNN
+F 3 "" H 5250 5000 60  0000 C CNN
+	1    5250 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5000 5050 5000
+Wire Wire Line
+	5300 5000 5350 5000
+Wire Wire Line
+	5350 4500 5350 5600
+$Comp
+L R R2
+U 1 1 5A3FF5BC
+P 4950 4750
+F 0 "R2" H 4950 4700 50  0000 C CNN
+F 1 "R" H 4950 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4950 4750 60  0001 C CNN
+F 3 "" H 4950 4750 60  0000 C CNN
+	1    4950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A3FF620
+P 4950 4500
+F 0 "R1" H 4950 4450 50  0000 C CNN
+F 1 "R" H 4950 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4950 4500 60  0001 C CNN
+F 3 "" H 4950 4500 60  0000 C CNN
+	1    4950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED L2
+U 1 1 5A4000CD
+P 5250 4750
+F 0 "L2" H 5250 4650 50  0000 C CNN
+F 1 "LED" H 5250 4850 50  0000 C CNN
+F 2 "keyboard_parts:LED_0805" H 5250 4750 60  0001 C CNN
+F 3 "" H 5250 4750 60  0000 C CNN
+	1    5250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED L1
+U 1 1 5A40024C
+P 5250 4500
+F 0 "L1" H 5250 4400 50  0000 C CNN
+F 1 "LED" H 5250 4600 50  0000 C CNN
+F 2 "keyboard_parts:LED_0805" H 5250 4500 60  0001 C CNN
+F 3 "" H 5250 4500 60  0000 C CNN
+	1    5250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4500 5150 4500
+Wire Wire Line
+	5050 4750 5150 4750
+Wire Wire Line
+	5300 4500 5350 4500
+Connection ~ 5350 5000
+Wire Wire Line
+	5300 4750 5350 4750
+Connection ~ 5350 4750
+Wire Wire Line
+	4300 4500 4850 4500
+Wire Wire Line
+	4300 4750 4850 4750
+Text Label 4300 4500 0    60   ~ 0
+LED_0
+Text Label 4300 4750 0    60   ~ 0
+LED_1
+Text Label 4300 5000 0    60   ~ 0
+LED_2
+Wire Wire Line
+	3950 2000 4400 2000
+Wire Wire Line
+	4400 1900 3950 1900
+Wire Wire Line
+	4400 1800 3950 1800
+Text Label 4400 1800 2    60   ~ 0
+LED_2
+Text Label 4400 1900 2    60   ~ 0
+LED_1
+Text Label 4400 2000 2    60   ~ 0
+LED_0
+Text Label 4500 3200 0    60   ~ 0
+RX
+Text Label 4500 3100 0    60   ~ 0
+TX
+$EndSCHEMATC
